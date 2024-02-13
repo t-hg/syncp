@@ -47,7 +47,7 @@ func main() {
 	go func() {
 		cmd := exec.Command("sync")
 		err := cmd.Run()
-		//running = false
+		running = false
 		if err != nil {
 			panic(err)
 		}
